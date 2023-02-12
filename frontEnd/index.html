@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/CSS/login.css">
+</head>
+<body id="login">
+  <main>
+      <div>
+          <img src="src/image/eagle.jpg" alt="logo picture here">
+      </div>
+      <div class="form-div">
+          <form action="">
+            <div class="grid-labels">
+              <label for="email" class="email-label">email:</label>
+              <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            
+              <label for="password">password:</label>
+              <input name="password" id="password" type="password" placeholder="password">
+            </div>
+            <div class="not-entered"><p style="color: red;">enter credential</p></div>
+            <div>
+              <small class="forget-pass">forgot password</small> 
+              <button class="signup sign-btn">signup</button>
+            </div>
+            <p class="wrong-cred">wrong credentials</p>
+            <button id="proceed" >login</button>
+          </form>
+      </div>
+  </main>
+  <script type="text/javascript" src="src/JS/login.js"></script>
+</body>
+</html>
