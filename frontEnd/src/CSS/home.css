@@ -22,7 +22,6 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
- 
 } 
 
 /* .header{
@@ -138,7 +137,6 @@ ul li{
     background-color: rgb(195, 195, 195);
     margin-top:15px;
     margin-left: 5px;
-     
 }*/
 .side-menus li{
     text-decoration: none;
@@ -148,7 +146,6 @@ ul li{
     text-decoration: none;
     color: beige;
 }
-
 img{
     border-radius: 5px;
 }
@@ -323,7 +320,7 @@ video{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
-    /* height: 80%;    */
+
 }
 .pics-collection .collect-like-btn{
     opacity: 0;
