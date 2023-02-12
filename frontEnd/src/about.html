@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+    
+</head>
+<body>
+    <aside class="side-menus">
+        <button onclick={hideMenus()} ><i class="fa fa-remove"></i></button>
+        <ul>
+          <li><a href="./home.html" title="home page">Home</a></li>
+          <li><a href="./nature.html" title="nature pictures page">Nature</a></li>
+          <li><a href="./historical.html" title="historical pictures page">Historical</a></li>
+          <li><a href="./unesco.html" title="unesco registered pictures page">UNESCO</a></li>
+          <li><a href="./favorite.html" title="your favorites collection page">Favorite</a></li>
+        </ul>
+      </aside>
+      
+      <div class="header">
+        <div class="logo-search-pp">
+          <button onclick={showSideMenu()}><i class="fa fa-bars"></i></button>
+          <img src="./image/eagle.jpg" alt="logo picture"/>
+          <form >
+            <label for="search">search: </label>
+            <input name="search" id="search" type="search"  placeholder="search place or animal">
+          </form>
+          <div onmouseover="showupd()" onmouseout="hideup()" class="" >
+            <div class="logout-update done"><p class="logout">logout</p><p id="updat-pro" onclick="doItUpd()">update profile</p></div>
+            <img class='pro-pic'   src="./image/pp.png" alt="profile-picure" title="login page">
+        </div>
+        </div>
+        <nav class="nav-links">
+          <a href="./home.html" title="home page">Home</a>
+          <a href="./nature.html" title="nature pictures page">Nature</a>
+          <a href="./historical.html" title="historical pictures page">Historical</a>
+          <a href="./unesco.html" title="unesco registered pictures page">UNESCO</a>
+          <a href="./favorite.html" title="your favorites collection page">Favorite</a>
+        </nav>
+      </div>
+    <main>
+        <h1>About Us</h1>
+        <div>
+            <img src="./image/eagle.jpg" alt="">
+        </div>
+        <article>
+            <section>
+                <img src="./image/abbe-sublett-nxZDMUQhN4o-unsplash.jpg" alt="">
+                <div>
+                    <h2>vision</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam excepturi magnam impedit aliquid odio assumenda officiis tenetur commodi sint!</p>
+
+                </div>
+                
+            </section>
+            <section>
+                <img src="./image/abbe-sublett-nxZDMUQhN4o-unsplash.jpg" alt="">
+                <div>       
+                    <h2>mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam excepturi magnam impedit aliquid odio assumenda officiis tenetur commodi sint!</p>
+                </div>
+                
+                
+            </section>
+            <section>
+                <img src="./image/abbe-sublett-nxZDMUQhN4o-unsplash.jpg" alt="">
+                <div>
+                    <h2>Values</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam excepturi magnam impedit aliquid odio assumenda officiis tenetur commodi sint!</p>
+                </div>
+                
+                
+            </section>
+        </article>
+        <div >
+            <div class="video-aud">
+                <video muted controls >
+                    <source src="./video/video.mp4" type="video/mp4" >
+                    <track label="English" kind="subtitles" srclang="en" src="" default>
+                  </video>
+                <audio src="./audio/audio.mp3" type='audio/mp3' muted controls></audio>
+            </div>
+            
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>year</th>
+                    <th>pictures</th>
+                    <th>parks</th>
+                    <th>users</th>
+                    <th>downloads</th>
+                </tr>
+                <tr class="even">
+                    <td>2010</td>
+                    <td>1500</td>
+                    <td>7</td>
+                    <td>500,000</td>
+                    <td>1,500,000</td>
+                </tr>
+                <tr class="odd">
+                    <td>2011</td>
+                    <td>2000</td>
+                    <td>12</td>
+                    <td>556,000</td>
+                    <td>2,000,000</td>
+                </tr>
+                <tr class="even">
+                    <td>2012</td>
+                    <td>2500</td>
+                    <td>15</td>
+                    <td>675,000</td>
+                    <td>2,354,000</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div>  
+              &copy; Tourism 2022
+              <p>since 2007</p>
+              <p>locatio: Addis Ababa, Ethiopia</p>
+            </div>
+           <div>
+            <a href="./about.html">About Us</a>
+            <p>telephone: +25111********</p>
+            <p>post: 86098</p>
+          </div>
+            <div>
+              <a href="./contact.html">Contact Us</a>
+              <a href="http://www.facebook.com" target="_blank">facebook</a>
+              <a href="www.instagram.com" target="_blank">instagram</a>
+            </div>
+            
+          </footer>
+          <script src="./JS/common.js"></script>
+    </main>
+    
+</body>
+</html>

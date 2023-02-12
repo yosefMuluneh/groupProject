@@ -1,0 +1,461 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+img{
+    height: 200px;
+    border-radius: 50%;
+}
+.video-aud{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+article{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(222, 213, 201);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+@media screen and (max-width:800px) {
+    article{
+        flex-direction: column;
+    }
+    h2, p{
+        margin-left: 10px;
+    }
+    video{
+        width: 100%;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+}
+@media screen and (max-width:1110px) {
+    .video-aud{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+section img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+section h2{
+    margin: 0;
+}
+audio{
+    margin-bottom: 5%;
+}
+th{
+    background-color: rgb(41, 39, 39);
+    padding: 5px 25px;
+    color: white;
+    font-weight: bolder;
+}
+td{
+    padding:2% 5% ;
+}
+.even{
+    background-color: lightgray;
+}
+.odd{
+    background-color: rgb(30, 33, 33);
+    color: white;
+}
+@media only screen and (max-width:450px) {
+    td{
+        padding: 3px;
+    }
+    th{
+        padding: 4px;
+    }
+}
+/* footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(79, 75, 75);
+    height: 6rem;
+    color: white;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: wheat;
+    display: block;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(3, 175, 255);
+}
+footer p{
+    margin: 0;
+} */
+/* from home */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: rgb(251, 252, 252);
+    box-shadow: 3px 3px 4px rgba(10,0,0,0.75);
+    border-radius: 4px;
+    border:none;
+    margin:0 5px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 1.3rem 0;
+}
+.nav-links a{
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.5s;
+}
+.nav-links a:hover{
+    box-shadow: 0 0 5px 5px grey;
+    scale: 1.4;
+  
+}
+@media screen and (min-width:768px){
+    .logo-search-pp button{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+    
+    /* .logo-search-pp{
+        max-width: fit-content;
+        gap: 10px;
+        align-items: center;
+    } */
+    .logo-search-pp form{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-search-pp input{
+        max-width: 150px;
+    }
+    .pro-pic{
+        right: 2%;
+    }
+}
+
+.side-menus{
+    z-index: 10000001;
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(41, 40, 40);
+    padding-right: 20px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    transition: display 0.45s;
+}
+.side-menus ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+}
+
+.side-menus button{
+    width: fit-content;
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    padding: 10px 55px;
+    border: none;
+    color: red;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo-search-pp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-search-pp button{
+    /* display: none; */
+    background-color: transparent;
+    border: none;
+    color: darkblue;
+    font-size: larger;
+}
+.logo-search-pp input{
+    height: 40px;
+    width: 500px;
+    border: solid 2px rgb(186, 182, 182);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: inset 2px 2px 3px rgba(0,0,0,0.25);
+}
+
+.logo-search-pp img{
+    height: 60px;
+    border-radius: 50%;
+}
+.logout-update{
+    background-color: rgb(59, 78, 176);
+    border: solid 2px rgb(18, 2, 84);
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 2%;
+    top: 27%;
+    max-width: 28vw;
+    max-height: 26vh;
+    padding-right: 15px;
+    padding-left: 5px;
+    /* opacity: 0; */
+    /* display: none; */
+    transition: display 0.45s;
+}
+
+.logout-update p{
+    width: 90%;
+    margin-top: 5px;
+    transition: all 0.45s;
+    cursor: pointer;
+    background-color: rgb(14, 2, 91);
+    color: rgb(234, 246, 250);
+    padding: 5px 3px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logout-update p:hover{
+    background-color: rgb(41, 40, 40);
+   
+}
+
+.done{
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(79, 75, 75);
+    height: 5rem;
+    color: white;
+    width: 100%;
+    
+}
+footer p{
+    margin: 0;
+}
+
+@media only screen and (max-width:390px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+footer a{
+    text-decoration: none;
+    color: wheat;
+    display: block;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: wheat;
+}
+
+.search{
+    position:fixed;
+    top:6rem;
+    left:0rem;
+    width:95vw;
+    height:65vh;
+    background:rgb(167, 197, 222);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;
+    align-items: center;
+    z-index:1000000;
+    overflow: scroll;
+    border: solid rgb(0, 78, 142) 2px;
+    margin:auto 2%;
+    padding-bottom: 16rem;
+    padding-top: 40px;
+    
+}
+.search img{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    /* .search{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 2%;
+        margin: auto 5%;
+    } */
+    main{
+        overflow-x: hidden;
+    }
+    .search img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .search{
+        grid-template-columns: 1fr 1fr;
+        margin:auto 5%;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .search{
+        grid-template-columns: 1fr;
+        margin:auto 5%;
+        width: 90vw;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    
+    .logout-update{
+        height: 10vh;
+        width: 20vw;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .side-menus li{
+        text-decoration: none;
+        margin: 10px;
+    }
+    .side-menus a{
+        text-decoration: none;
+        color: beige;
+    }
+    
+}
+
+
+.search .cancelled{
+    background-color: darkred;
+    color: white;
+    display: block;
+    border: none;
+}
+.pos-rel{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: x-large;
+}
+
+.search .detail-info{
+    padding-bottom: 10px;
+}
+.the-search button{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.search img{
+    max-width: 450px;
+    max-height: 250px;
+    width: 300px;
+    height: 200px;
+}
+.search .mb-0{
+    margin-bottom: 0;
+}
+
+.third-pic-btn{
+    background-color: white;
+    /* padding: 5px;
+    padding-bottom: 25px; */
+    border-radius: 5px;
+    border:none;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.45);
+    padding: 0;
+}
+.third-pic-btn p{
+    padding-left: 7px;
+}
+.third-btn-cont{
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: rgba(0,0,0,0.25);
+    padding: 10px;
+}
+.third-btn-cont:hover{
+    opacity: 1;
+}
+.detail-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.detail-info p{
+    margin: 0;
+}
+.detail-info p span{
+    font-weight: bolder;
+}
+
+.recieve-block .cancelled{
+    background-color: darkred;
+    color: white;
+}

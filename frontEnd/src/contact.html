@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+<body>
+    <aside class="side-menus">
+        <button onclick={hideMenus()} ><i class="fa fa-remove"></i></button>
+        <ul>
+          <li><a href="./home.html" title="home page">Home</a></li>
+          <li><a href="./nature.html" title="nature pictures page">Nature</a></li>
+          <li><a href="./historical.html" title="historical pictures page">Historical</a></li>
+          <li><a href="./unesco.html" title="unesco registered pictures page">UNESCO</a></li>
+          <li><a href="./favorite.html" title="your favorites collection page">Favorite</a></li>
+        </ul>
+      </aside>
+      
+      <div class="header">
+        <div class="logo-search-pp">
+          <button onclick={showSideMenu()}><i class="fa fa-bars"></i></button>
+          <img src="./image/eagle.jpg" alt="logo picture"/>
+          <form >
+            <label for="search">search: </label>
+            <input name="search" id="search" type="search"  placeholder="search place or animal">
+          </form>
+          <div onmouseover="showupd()" onmouseout="hideup()" class="" >
+            <div class="logout-update done"><p class="logout">logout</p><p id="updat-pro" onclick="doItUpd()">update profile</p></div>
+            <img class='pro-pic'   src="./image/pp.png" alt="profile-picure" title="login page"></div>
+        </div>
+        <nav class="nav-links">
+          <a href="./home.html" title="home page">Home</a>
+          <a href="./nature.html" title="nature pictures page">Nature</a>
+          <a href="./historical.html" title="historical pictures page">Historical</a>
+          <a href="./unesco.html" title="unesco registered pictures page">UNESCO</a>
+          <a href="./favorite.html" title="your favorites collection page">Favorite</a>
+        </nav>
+      </div>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="logo">
+            <img  src="./image/eagle.jpg" alt="logo picture">
+           
+        </div>
+        <div class="comp-pic">
+            <img src="./image/abbe-sublett-nxZDMUQhN4o-unsplash.jpg" alt="company picture">
+        </div>
+        <div class="link-list">
+            <div class="link">
+                 <a href="www.gmail.com" title="email us now">email us</a>
+                 <a href="www.facebook.com"><img src="./image/104458_facebook_social media_fb_social_icon.png" alt="facebook logo"></a>
+            </div>
+            <div class="link">
+                <a href="www.facebook.com" title="follow on facebook page">follow us on facebook</a>
+                <a href="www.facebook.com"><img src="./image/104458_facebook_social media_fb_social_icon.png" alt="facebook logo"></a>   
+            </div>
+           <div class="link">
+                <a href="www.instagram.com" title="follow us on instagram">follow our instagram</a>
+                <a href="www.instagram.com"><img src="./image/instagram-logo.png" alt="instagram logo"></a>
+           </div>
+            <div class="link">
+                <a href="www.linkedin.com">follow on a linkedIn page</a>
+                <a href="www.linked.com"><img src="./image/iconmonstr-linkedin-3-64.png" alt="linkedin logo"></a>
+            </div>
+            
+        </div>
+        <div>
+            <form class="cont-form">
+                <label for="feedback">Your feedback:</label><br>
+                <input type="text" id="feedback" placeholder="">
+                <button type="button" id="send-feed" onclick={sendFeed()}>Send</button>
+                <p class="the-success">you have succesfully sent your feedback. Thank you🙏</p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>  
+          &copy; Tourism 2022
+          <p>since 2007</p>
+          <p>locatio: Addis Ababa, Ethiopia</p>
+        </div>
+       <div>
+        <a href="./home.html">Home</a>
+        <p>telephone: +25111********</p>
+        <p>post: 86098</p>
+      </div>
+        <div>
+          <a href="./about.html">About us</a>
+          <a href="www.facebook.com" >facebook</a>
+          <a href="www.instagram.com">instagram</a>
+        </div>
+        
+      </footer>
+    <script type="text/javascript" src="./JS/common.js"></script>
+</body>
+</html>
